@@ -1,0 +1,22 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  align-items: center;
+  background-color: #0a0a0a;
+  display: grid;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+#screen {
+  --aspect-ratio: calc(4 / 3);
+  --inverse-ratio: calc(1 / var(--aspect-ratio));
+  border: 1px solid limegreen;
+  display: block;
+  height: calc(100vw * var(--inverse-ratio));
+  margin: 0 auto;
+  max-height: calc(100vh - 1px);
+  max-width: calc(100vw - 1px);
+  width: calc(100vh * var(--aspect-ratio));
+}
