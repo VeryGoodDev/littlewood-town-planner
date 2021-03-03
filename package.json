@@ -18,6 +18,9 @@
   "eslintConfig": {
     "extends": [
       "personal"
-    ]
+    ],
+    "rules": {
+      "import/extensions": "off"
+    }
   }
 }
